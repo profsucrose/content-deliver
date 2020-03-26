@@ -1,70 +1,10 @@
 const app = require('express')()
 const jimp = require('jimp')
+const { readFileSync } = require('fs')
 
 const fullNameToImage = require('../static/suitup/nameToImage.json')
-const styling = `
-    .container {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-    }
+const styling = readFileSync('static/suitup/style.css')
 
-    a {
-        cursor: pointer;
-    }
-
-    code {
-        display: block;
-        text-align: center;
-        margin: 10px;
-    }
-    
-    .control, button {
-        width: 100%;
-        margin: 5px;
-    }
-
-    button {
-        font-weight: 600 !important;
-        text-align: center !important;
-    }
-
-    input {
-        text-align: center !important;
-    }
-
-    .inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    img {
-        width: 400px;
-    }
-
-    .image-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
-    .click-to-download {
-        position: absolute;
-        text-align: center;
-        bottom: 20;
-        padding: 4px;
-        border-radius: 5px;
-        font-weight: 900;
-        color: white;
-        opacity: 0.9;
-        font-family: Lato;
-        bottom: 0;
-    }
-`
 const header = `
     <title>Suitup</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
