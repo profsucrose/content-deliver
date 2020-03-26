@@ -1,0 +1,9 @@
+.painting {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#paintings-container {
+    margin-top: 20px;
+}

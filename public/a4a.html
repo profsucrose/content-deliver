@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>A4A</title>
+        <script src="js/loada4aPaintings.js" defer></script>
+        <script src="js/a4a.js" defer></script>
+        <link rel="stylesheet" href="css/a4a.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+        <link rel="icon" href="static/a4a/A4ALogo.png" />
+    </head>
+    <body>
+        <div style="padding:20px;">
+            <div class="ui container">
+                <h1 class="title is-1">ART for All</h1>
+                <div class="ui form">
+                    <div class="field">
+                    <label>Search Artwork</label>
+                    <input id="search" type="text" placeholder="Starry Night" onkeyup="searchPainting()" >
+                    </div>
+                </div>
+                <div id="paintings-container"></div>
+            </div>
+        </div>
+    </body>
+</html>
