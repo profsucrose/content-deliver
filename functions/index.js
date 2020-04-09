@@ -16,9 +16,9 @@ app.use(
     require('./routes/bots/skype/mc-query'),
     require('./routes/truthordare'),
     require('./routes/infinite-jest'),
-    require('./routes/javascript'),
-    require('./routes/goldensnek2'),
-    require('./routes/suitup')
+    require('./routes/endermite'),
+	require('./routes/goldensnek2'),
+	require('./routes/desktopbird')
 )
 
 exports.api = functions.https.onRequest(app)
