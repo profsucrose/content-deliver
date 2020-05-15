@@ -18,7 +18,9 @@ app.use(
     require('./routes/infinite-jest'),
     require('./routes/endermite'),
 	require('./routes/goldensnek2'),
-	require('./routes/desktopbird')
+	require('./routes/desktopbird'),
+	require('./routes/article'),
+	require('./routes/callcraft')
 )
 
 exports.api = functions.https.onRequest(app)
